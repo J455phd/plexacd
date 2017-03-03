@@ -24,8 +24,13 @@ To install you need to pull this git repo, you then can choose between UnionFS o
 If you want OverlayFS you need kernel 3.18+, you can follow my kernel install below prior to running any scripts.
 
 ```
-git pull https://github.com/jaketame/scripts.git
-Copy either UnionFS or OverlayFS to /opt/plexacd/ and amend plexconf.conf with your relevant paths
+cd /tmp
+git clone https://github.com/jaketame/scripts.git plexacd/
+cd /tmp/plexacd
+cp /tmp/plexacd/UnionFS or OverlayFS to /opt/plexacd/
+cd /opt/plexacd
+chmod +x *.sh
+Amend plexconf.conf with your relevant paths
 Copy sysctl.conf to /etc/sysctl.conf - Please ensure you verify no existing parameters exist, if this is a fresh install there won't be
 ```
 
