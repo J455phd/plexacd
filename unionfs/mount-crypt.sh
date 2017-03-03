@@ -57,7 +57,7 @@ $rclone mount \
 
 mount_mediadir() {
 # Mount the unionfs
-$unionfs -o cow,auto_cache,allow_other,max_readahead=2000000000 -o uid=1001 -o gid=1001 $LOCALDIR=RW:$ACDCRYPT=RO $MEDIADIR
+$unionfs -o cow,auto_cache,allow_other,direct_io,sync_read -o uid=1001 -o gid=1001 $LOCALDIR=RW:$ACDCRYPT=RO $MEDIADIR
 if [ $? -eq 0 ]; then
   log "Mounted $MEDIADIR successfully"
   else
