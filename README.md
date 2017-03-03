@@ -67,11 +67,11 @@ Optional - Run mount-check every 5 minutes to verify mount is still online Not n
 This kernel has been complied from source and includes overlayfs and tuning changes to fuse, you can view more here
 https://jaketame.co.uk/kernel/
 
-'''
+```
 Once you have git pulled the repo, you can install the custom kernel either version 3.18.48 or 4.4.52
 cd kernel
 cd 4.4.52
 dpkg -i linux-*.deb
 reboot
 uname -a # Verify new kernel
-'''
+```
