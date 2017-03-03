@@ -9,7 +9,7 @@ What things you need to install the software and how to install them
 
 ```
 * Ubunutu / Debian - For custom kernel to work
-* Fully setup plex / rclone install
+* Fully setup plex / rclone latest beta version
 * Mount points for your local data / acd-crypt 
 ```
 
