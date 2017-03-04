@@ -59,11 +59,11 @@ $rclone mount \
 mount_mediadir() {
 # Mount the local / remote dirs into a overlay filesystem
 # Lowerdir is read-only (ACD), the upper dir is the write local dir, the work dir is used by overlay
-mount -t overlay -o lowerdir=$ACDCRYPT,upperdir=$LOCALDIR,workdir=$WORKDIR overlay $MEDIADIR
+mount -t overlay overlay -o lowerdir=$ACDCRYPT,upperdir=$LOCALDIR,workdir=$WORKDIR $MEDIADIR
 if [ $? -eq 0 ]; then
   log "Mounted $MEDIADIR successfully"
   else
-  log "Failed to mount unionfs of $LOCALDIR and $ACDCRYPT. please retry"
+  log "Failed to mount overlayfs of $LOCALDIR and $ACDCRYPT. please retry"
 fi
 
 }
