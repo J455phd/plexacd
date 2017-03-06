@@ -59,7 +59,7 @@ Option 2 - Upload files every 6 hours
 Optional - Run mount-check every 5 minutes to verify mount is still online Not needed as rclone mount is fairly stable
 
 ```
-*/5 * * * * /opt/plexacd/check-mount.sh
+*/5 * * * * /opt/plexacd/mount-check.sh
 ```
 
 ### Custom Kernel
