@@ -8,9 +8,10 @@ Running your own Plex Cloud with rclone, amazon cloud drive with either unionfs 
 What things you need to install the software and how to install them
 
 ```
-* Ubunutu / Debian - For custom kernel to work
+* Ubuntu / Debian - For custom kernel to work
 * Fully setup plex / rclone latest beta version
 * Mount points for your local data / acd-crypt 
+* Ubunut 14.X requires overlayroot package (apt-get install overlayroot)
 ```
 
 ### About
