@@ -38,7 +38,7 @@ fi
 }
 
 mount_acdcrypt() {
-# Mount the acd via rclone to encrypted path, then run encfs to decrypt
+# Mount the acd via rclone using rclone crypt
 log "Mounting $ACDCRYPT"
 $rclone mount \
     --read-only \
