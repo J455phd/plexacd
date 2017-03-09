@@ -31,7 +31,7 @@ cd /tmp/plexacd
 cp /tmp/plexacd/UnionFS or OverlayFS to /opt/plexacd/
 cd /opt/plexacd
 chmod +x *.sh
-Amend plexconf.conf with your relevant paths
+Amend plexacd.conf with your relevant paths
 Copy sysctl.conf to /etc/sysctl.conf - Please ensure you verify no existing parameters exist, if this is a fresh install there won't be
 ```
 
