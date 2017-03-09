@@ -28,7 +28,7 @@ If you want OverlayFS you need kernel 3.18+, you can follow my kernel install be
 cd /tmp
 git clone https://github.com/jaketame/scripts.git plexacd/
 cd /tmp/plexacd
-cp /tmp/plexacd/UnionFS or OverlayFS to /opt/plexacd/
+cp /tmp/plexacd/unionfs or overlayfs to /opt/plexacd/
 cd /opt/plexacd
 chmod +x *.sh
 Amend plexacd.conf with your relevant paths
